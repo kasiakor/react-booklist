@@ -1,11 +1,8 @@
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Register from "./Register";
 
 function Home() {
   return <h2>Home Page</h2>;
-}
-
-function Register() {
-  return <h2>Register Page</h2>;
 }
 
 function App() {
