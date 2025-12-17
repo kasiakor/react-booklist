@@ -21,7 +21,7 @@ function Register() {
     setUsername(value);
     if (!usernameRegex.test(value)) {
       setUsernameError(
-        "Username must be at least 8 characters, include uppercase, lowercase, number, and special character."
+        "username must be at least 8 characters, include uppercase, lowercase, number, and special character."
       );
     } else {
       setUsernameError("");
