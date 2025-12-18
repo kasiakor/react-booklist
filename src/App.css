@@ -1,3 +1,49 @@
+/* books table styling */
+
+.books-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fff8f0;
+  box-shadow: 0 2px 12px rgba(220, 20, 60, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed; /* Prevents vertical expansion */
+}
+
+.books-table th,
+.books-table td {
+  padding: 0.85rem 1.2rem;
+  text-align: left;
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflowed text */
+  text-overflow: ellipsis; /* Adds ... for overflowed text */
+}
+
+.books-table th {
+  background: linear-gradient(90deg, #517ed6 0%, #4183d8 100%);
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 700;
+  border-bottom: 2px solid #00bcd4;
+}
+
+.books-table td {
+  border-bottom: 1px solid #00bcd4;
+  color: #333;
+  font-size: 1rem;
+}
+
+.books-table tr:last-child td {
+  border-bottom: none;
+}
+
+.books-table tr:hover td {
+  background: #ffe4e1;
+  transition: background 0.2s;
+}
+
 /* Register form styles */
 .register-bg {
   display: flex;
