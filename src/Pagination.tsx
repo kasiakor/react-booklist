@@ -6,6 +6,28 @@ type PaginationProps = {
   OnPageChange?: (page: number) => void;
 };
 
+/**
+ * Pagination component for navigating through pages of data.
+ *
+ * Props:
+ * - totalPages (number): The total number of pages available.
+ * - InitialPage (number, optional): The initial page to display (default is 1).
+ * - OnPageChange (function, optional): Callback function called with the new page number whenever the page changes.
+ *
+ * Features:
+ * - Displays previous and next buttons to navigate between pages.
+ * - Shows a dropdown to select a specific page.
+ * - Calls OnPageChange callback whenever the current page changes.
+ * - Disables previous button on the first page and next button on the last page.
+ *
+ * Example usage:
+ * <Pagination
+ *   totalPages={10}
+ *   InitialPage={1}
+ *   OnPageChange={(page) => console.log(page)}
+ * />
+ */
+
 export function Pagination({
   totalPages,
   InitialPage = 1,
